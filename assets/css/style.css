@@ -8,6 +8,8 @@ body {
 
 * {
 	box-sizing: border-box;
+	outline-style: dotted;
+	outline-color: orange;
 }
 /*sticky footer stuff*/
 /*http://ryanfait.com/html5-sticky-footer/*/
@@ -246,4 +248,74 @@ input[type=submit] {
 	font-size: 18px;
 	padding: 10px 30px;
 	cursor: pointer;
+}
+/* Responsive style */
+@media screen and (max-width: 980px) {
+	.work{
+		width: 590px;
+	}
+	.auth-image {
+		width: 590px;
+	}
+}
+/*tablet */
+@media screen and (max-width: 768px){
+	
+	.main-section,
+	.sidebar{
+		max-width: 650px;
+		margin-left: 40px;
+		float: left;
+		overflow: auto;
+	}
+	nav{
+		margin-right: 40px;
+	}
+	#logo{
+		margin-left: 40px;
+	}
+	.auth-image {
+	width: 200px;
+	}
+	
+}
+/* phone in landscadpe */
+@media screen and (max-width: 640px){
+	#masthead {
+		position: static;
+	}
+	#logo{
+		margin-left: 0;
+	}
+	.main-section,
+	.sidebar{
+		max-width: 550px;
+		margin-left: 30px;
+		float: left;
+		overflow: auto;
+	}
+	.work{
+		width: 490px;
+	}
+
+	#logo,
+	nav {
+	width: 100%;
+	}
+	nav{
+		float: left;
+		margin: 0;
+		padding: 20px;
+	}
+	nav a {
+	margin-left: 50px;
+	padding-left: 50px;
+	}
+	#main-container {
+		padding-top: 30px;
+	}
+	.auth-image {
+	width: 490px;
+	}
+
 }
