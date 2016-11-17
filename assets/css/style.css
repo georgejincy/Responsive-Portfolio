@@ -8,8 +8,10 @@ body {
 
 * {
 	box-sizing: border-box;
-	outline-style: dotted;
-	outline-color: orange;
+
+	/* for debugging*/
+	/* outline-style: dotted;
+	outline-color: orange; */
 }
 /*sticky footer stuff*/
 /*http://ryanfait.com/html5-sticky-footer/*/
@@ -253,42 +255,39 @@ input[type=submit] {
 @media screen and (max-width: 980px) {
 	.container {
 	max-width: 768px;
+	padding: 0 20px;
 	}
+
 	.main-section{
 		max-width: 420px;
 	}
 	
 	.work{
-		width: 358px;
+		width: 100%;
 	}
 	.auth-image {
-		width: 358px;
+		width: 100%;
 	}
 }
 /*tablet */
 @media screen and (max-width: 768px){
 
-	.container{
-		max-width: 650px;
-	}
+	/* .container{
+		max-width: 100%;
+	} */
 
 	.main-section,
 	.sidebar{
-		max-width: 650px;
+		max-width: 100%;
 	}
-	
 	.sidebar{
-		float: left;
-		overflow: auto;
 		margin-bottom: 40px;
 	}
-	
-	.auth-image {
-	width: 294px;
-	}
-
 	.work{
-		width: 274px;
+		width: 46.5%;
+	} 
+	.auth-image {
+		width: 50%;
 	}
 	
 }
@@ -296,6 +295,14 @@ input[type=submit] {
 @media screen and (max-width: 640px){
 	#masthead {
 		position: static;
+	}
+	.container{
+		padding: 0;
+	}
+	#main-container{
+		padding-top: 0;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 	.main-section,
 	.sidebar{
@@ -305,35 +312,13 @@ input[type=submit] {
 	nav {
 	width: 100%;
 	}
-	/* .main-section,
-	.sidebar{
-		max-width: 550px;
-		margin-left: 30px;
-		float: left;
-		overflow: auto;
-	}
+	.auth-image,
 	.work{
-		width: 490px;
-	}
-	
-	#logo,
-	nav {
-	width: 100%;
-	}
-	nav{
-		float: left;
-		margin: 0;
-		padding: 20px;
+		width: 100%;
 	}
 	nav a {
 	margin-left: 50px;
 	padding-left: 50px;
 	}
-	#main-container {
-		padding-top: 30px;
-	}
-	.auth-image {
-	width: 490px;
-	} */
 
 }
